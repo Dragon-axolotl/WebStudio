@@ -2,117 +2,172 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Портфоліо | WebStudio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <style>
+    :root {
+      --main-bg-color: #9bc3ff;
+      --primary-color: #2196f3;
+      --black-color: #000000;
+      --white-color: #ffffff;
+      --gray-color: #757575;
+    }
+
+    body {
+      background-color: var(--main-bg-color);
+      color: var(--black-color);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      color: var(--black-color);
+    }
+
+    header, section, footer {
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    button {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      padding: 10px 20px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo"><span>Web</span>Studio</a>
+
+  <!-- Хедер -->
+  <header>
+    <div>
+      <a href="#">WebStudio</a>
       <nav>
-        <ul class="nav">
-          <li><a href="index.html">Студія</a></li>
-          <li><a href="portfolio.html" class="active">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+        <ul>
+          <li><a href="#about">Студія</a></li>
+          <li><a href="#services">Портфоліо</a></li>
+          <li><a href="#contacts">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contacts">
+      <ul>
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </div>
   </header>
 
-  <main>
-    <section class="portfolio">
-      <div class="container">
-        <ul class="filters">
-          <li><button class="active">Усі</button></li>
-          <li><button>Веб-сайти</button></li>
-          <li><button>Додатки</button></li>
-          <li><button>Дизайн</button></li>
-          <li><button>Маркетинг</button></li>
-        </ul>
+  <!-- Герой -->
+  <section>
+    <h1>Ефективні рішення для вашого бізнесу</h1>
+    <button>Замовити послугу</button>
+  </section>
 
-        <ul class="grid">
-          <li class="card">
-            <img src="images/techno.jpg" alt="Технокряк" />
-            <div class="info">
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/poster.jpg" alt="Постер New Orlean" />
-            <div class="info">
-              <h3>Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/restaurant.jpg" alt="Ресторан Seafood" />
-            <div class="info">
-              <h3>Ресторан Seafood</h3>
-              <p>Додаток</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/headphones.jpg" alt="Проєкт Prime" />
-            <div class="info">
-              <h3>Проєкт Prime</h3>
-              <p>Маркетинг</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/boxes.jpg" alt="Проєкт Boxes" />
-            <div class="info">
-              <h3>Проєкт Boxes</h3>
-              <p>Додаток</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/inspiration.jpg" alt="Inspiration has no Borders" />
-            <div class="info">
-              <h3>Inspiration has no Borders</h3>
-              <p>Веб-сайт</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/limited.jpg" alt="Видання Limited Edition" />
-            <div class="info">
-              <h3>Видання Limited Edition</h3>
-              <p>Дизайн</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/lab.jpg" alt="Проєкт LAB" />
-            <div class="info">
-              <h3>Проєкт LAB</h3>
-              <p>Маркетинг</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/growing.jpg" alt="Growing Business" />
-            <div class="info">
-              <h3>Growing Business</h3>
-              <p>Дизайн</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+  <!-- Переваги -->
+  <section>
+    <h2>Наші переваги</h2>
+    <ul>
+      <li>
+        <h3>Увага до деталей</h3>
+        <p>Ми уважні до кожної дрібниці вашого проєкту.</p>
+      </li>
+      <li>
+        <h3>Пунктуальність</h3>
+        <p>Чітке дотримання термінів — наш пріоритет.</p>
+      </li>
+      <li>
+        <h3>Планування</h3>
+        <p>Ефективна організація всіх етапів роботи.</p>
+      </li>
+      <li>
+        <h3>Сучасні технології</h3>
+        <p>Використовуємо новітні підходи у розробці.</p>
+      </li>
+    </ul>
+  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <a class="logo"><span>Web</span>Studio</a>
+  <!-- Чим ми займаємось -->
+  <section>
+    <h2>Чим ми займаємось</h2>
+    <ul>
+      <li>
+        <img src="./box 1.jpg" alt="Десктопні застосунки" />
+        <p>Десктопні застосунки</p>
+      </li>
+      <li>
+        <img src="./img.jpg" alt="Мобільні застосунки" />
+        <p>Мобільні застосунки</p>
+      </li>
+      <li>
+        <img src="./img (1).png" alt="Дизайнерські рішення" />
+        <p>Дизайнерські рішення</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Команда -->
+  <section>
+    <h2>Наша команда</h2>
+    <ul>
+      <li>
+        <img src="./img (1).jpg" alt="Ігор Дем'яненко" />
+        <h3>Ігор Дем'яненко</h3>
+        <p>Product Designer</p>
+      </li>
+      <li>
+        <img src="./img (2).jpg" alt="Ольга Рєпіна" />
+        <h3>Ольга Рєпіна</h3>
+        <p>Frontend Developer</p>
+      </li>
+      <li>
+        <img src="./img (3).jpg" alt="Микола Тарасов" />
+        <h3>Микола Тарасов</h3>
+        <p>Marketing</p>
+      </li>
+      <li>
+        <img src="./img (4).jpg" alt="Михайло Єрмаков" />
+        <h3>Михайло Єрмаков</h3>
+        <p>UI Designer</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div>
+      <a href="#">WebStudio</a>
       <address>
-        м. Київ, пр-т Лесі Українки, 26<br>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br>
+        м. Київ, пр-т Лесі Українки, 26<br />
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
         <a href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
     </div>
   </footer>
+
 </body>
 </html>

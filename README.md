@@ -4,14 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-  <style>
-    :root {
-      --main-bg-color: #9bc3ff;
-      --primary-color: #2196f3;
-      --black-color: #000000;
-      --white-color: #ffffff;
-      --gray-color: #757575;
-    }
 </head>
 <body>
 
